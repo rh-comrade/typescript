@@ -12,3 +12,8 @@ var HOF = function (cb, msg) {
     return cb(msg);
 };
 HOF(test_23, 'HOF callbacks');
+// optinal parameter for function
+var goAhead = function (u1, u2) {
+    console.log("hello ".concat(u1, " and ").concat(u2 ? u2 : 'test'));
+};
+goAhead('u1');
