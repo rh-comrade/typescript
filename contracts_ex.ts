@@ -6,13 +6,19 @@ interface iproduct {
     name:string,
     price:number,
     stock:boolean,
+    qty:number,
+    total():number,
     rating?:number
 }
 
-const TV:iproduct = {
+var TV:iproduct = {
     name:'samsung',
     price:35000.33,
     stock:true,
+    qty:2,
+    total:()=>{
+            return this.price*this.qty
+            },
     rating:4.8
 }
 
