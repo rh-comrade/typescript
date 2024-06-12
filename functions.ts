@@ -21,3 +21,12 @@ const HOF = (cb:Function, msg:string)=>{
 }
 
 HOF(test_23,'HOF callbacks')
+
+
+// optinal parameter for function
+// put ? after the pramater you want to pass optinal one
+
+const goAhead = (u1:string,u2?:string)=>{
+    console.log(`hello ${u1} and ${u2?u2:'test'}`)
+}
+goAhead('u1')
